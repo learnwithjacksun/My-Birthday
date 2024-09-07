@@ -143,7 +143,7 @@ const Cash = () => {
             <p className="mb-4 text-sm text-sub">
               I am so grateful. you&apos;ll be notified when I receive it!
             </p>
-            <Link className="bg-green-500 text-white py-2 px-6 rounded text-sm font-semibold">
+            <Link to="/" className="bg-green-500 text-white py-2 px-6 rounded text-sm font-semibold">
               You&apos;re Welcome!
             </Link>
           </div>
