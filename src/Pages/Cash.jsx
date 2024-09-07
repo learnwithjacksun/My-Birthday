@@ -44,24 +44,27 @@ const Cash = () => {
         setLoading(false);
       }
     }
-    };
-    
-    const toggleModal = () => {
-        setModal(prev => !prev)
-    }
+  };
+
+  const toggleModal = () => {
+    setModal((prev) => !prev);
+  };
 
   return (
     <>
       <Layout>
-              <div>
-              <Link to="/" className="h-10 w-10 flex-center border bg-secondary rounded-lg mb-6 text-sub">
-                      <span className="material-symbols-outlined">arrow_back</span>
-                  </Link>
+        <div>
+          <Link
+            to="/"
+            className="h-10 w-10 flex-center border bg-secondary rounded-lg mb-6 text-sub"
+          >
+            <span className="material-symbols-outlined">arrow_back</span>
+          </Link>
           <div>
             <h1 className="font-semibold text-xl text-green-500">
               Cash Gifts 🎁
             </h1>
-            <h1 className="text-sm text-sub">Thank you for your kind heart!</h1>
+            <h1 className="text-sm font-sans text-sub">Thank you for your kind heart!</h1>
           </div>
 
           {!payment && (
@@ -81,7 +84,7 @@ const Cash = () => {
                   onChange={handleChange}
                   autoComplete="off"
                   placeholder="Please enter your name..."
-                  className="border h-10 font-light focus-within:border-green-500 text-sm px-4 rounded"
+                  className="border-transparent focus:border bg-secondary h-10 font-light focus-within:border-green-500 text-sm px-4 rounded"
                 />
               </div>
               <div className="flex flex-col gap-1">
@@ -96,7 +99,7 @@ const Cash = () => {
                   onChange={handleChange}
                   autoComplete="off"
                   placeholder="Please enter your phone number..."
-                  className="border font-light h-10 focus-within:border-green-500 text-sm px-4 rounded"
+                  className="border-transparent focus:border bg-secondary font-light h-10  focus-within:border-green-500 text-sm px-4 rounded"
                 />
               </div>
               {/* <div className="flex flex-col gap-1">
@@ -109,7 +112,9 @@ const Cash = () => {
                 className="bg-green-500 h-10 rounded text-sm text-white font-semibold"
               >
                 {loading ? (
-                  <div className="flex-center"><img width={30} src={loader} /></div>
+                  <div className="flex-center">
+                    <img width={30} src={loader} />
+                  </div>
                 ) : (
                   "Proceed to payment"
                 )}
@@ -129,7 +134,10 @@ const Cash = () => {
                 </div>
               </div>
               <CopyInput text="8137411338" />
-              <button onClick={toggleModal} className="bg-green-500 h-10 rounded text-sm text-white font-semibold">
+              <button
+                onClick={toggleModal}
+                className="bg-green-500 h-10 rounded text-sm text-white font-semibold"
+              >
                 I have sent you something!
               </button>
             </div>
@@ -143,7 +151,10 @@ const Cash = () => {
             <p className="mb-4 text-sm text-sub">
               I am so grateful. you&apos;ll be notified when I receive it!
             </p>
-            <Link to="/" className="bg-green-500 text-white py-2 px-6 rounded text-sm font-semibold">
+            <Link
+              to="/"
+              className="bg-green-500 text-white py-2 px-6 rounded text-sm font-semibold"
+            >
               You&apos;re Welcome!
             </Link>
           </div>

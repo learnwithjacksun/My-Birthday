@@ -126,14 +126,14 @@ const Wishes = () => {
             <h1 className="font-semibold text-xl text-orange-400">
               Well Wishes 🎁
             </h1>
-            <h1 className="text-sm text-sub">Thank you for your kind heart!</h1>
+            <h1 className="text-sm text-sub font-sans">Thank you for your kind heart!</h1>
           </div>
 
           <button
             onClick={toggleForm}
             className="flex-center mt-6 text-sm font-semibold bg-orange-500 text-white h-10 px-6 rounded hover:brightness-90"
           >
-            <span className="material-symbols-outlined">add</span>
+            <span className="material-symbols-outlined">{show ? "close" : "add"}</span>
             <span>{show ? "Close Form" : "Send Wishes"}</span>
           </button>
 
@@ -155,7 +155,7 @@ const Wishes = () => {
                   onChange={handleChange}
                   autoComplete="off"
                   placeholder="Please enter your name..."
-                  className="border h-10 capitalize font-light focus-within:border-orange-500 text-sm px-4 rounded"
+                  className="border-transparent font-sans bg-secondary h-10 capitalize font-light focus:border focus-within:border-orange-500 text-sm px-4 rounded"
                 />
               </div>
 
@@ -170,7 +170,7 @@ const Wishes = () => {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="Please enter your message here..."
-                  className="border font-light focus-within:border-orange-500 text-sm px-4 py-2 rounded"
+                  className="border-transparent font-sans bg-secondary font-light focus:border focus-within:border-orange-500 text-sm px-4 py-2 rounded"
                 ></textarea>
               </div>
 
@@ -207,7 +207,7 @@ const Wishes = () => {
                   >
                     <div
                       onClick={() => editMessage(wish)}
-                      className="h-10 w-10 text-sm absolute right-2 border rounded top-2 flex-center bg-secondary"
+                      className="h-10 w-10 cursor-default text-sm absolute right-2 border rounded top-2 flex-center bg-secondary"
                     >
                       <span className="material-symbols-outlined text-xl">
                         edit_square
