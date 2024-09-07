@@ -10,7 +10,7 @@ const Container = () => {
                   <p className="text-sm font-sans text-sub">Please select the type of gift you would love to offer...</p>
               </div>
         <div className="mt-6 flex items-center flex-col md:flex-row gap-2 md:gap-4">
-          <Link to="/wishes" className="flex-1 border p-4 rounded-lg shadow-lg shadow-orange-100 w-full">
+          <Link to="/wishes" className="flex-1 border p-4 bg-secondary rounded-lg w-full">
             <div className="flex items-center gap-4">
               <div className="h-12 w-12 flex-center bg-orange-400 rounded">
                 <span className="material-symbols-outlined text-white">
@@ -24,7 +24,7 @@ const Container = () => {
                   
                   <p className="text-sm text-sub font-medium">- Or -</p>
 
-          <Link to="/cash" className="flex-1 border p-4 rounded-lg shadow-lg shadow-green-100 w-full">
+          <Link to="/cash" className="flex-1 border p-4 rounded-lg bg-secondary w-full">
             <div className="flex items-center gap-4">
               <div className="h-12 w-12 flex-center bg-green-400 rounded">
                 <span className="material-symbols-outlined text-white">
