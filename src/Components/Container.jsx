@@ -7,7 +7,7 @@ const Container = () => {
       <div className="border-t py-10">
               <div className="text-center">
                   <h1 className=" font-semibold text-xl">Any Offers?🎁</h1>
-                  <p className="text-sm text-sub">Please select the type of gift you would love to offer...</p>
+                  <p className="text-sm font-sans text-sub">Please select the type of gift you would love to offer...</p>
               </div>
         <div className="mt-6 flex items-center flex-col md:flex-row gap-2 md:gap-4">
           <Link to="/wishes" className="flex-1 border p-4 rounded-lg shadow-lg shadow-orange-100 w-full">
