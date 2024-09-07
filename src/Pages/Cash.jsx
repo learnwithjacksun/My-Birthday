@@ -95,7 +95,7 @@ const Cash = () => {
                   value={form.number}
                   onChange={handleChange}
                   autoComplete="off"
-                  placeholder="Please the amount you'd love to send..."
+                  placeholder="Please enter your phone number..."
                   className="border font-light h-10 focus-within:border-green-500 text-sm px-4 rounded"
                 />
               </div>
@@ -125,7 +125,7 @@ const Cash = () => {
               <div>
                 <div className="flex text-sm items-center justify-between">
                   <b>Celebrant Name:</b>
-                  <span>Gift Jackson</span>
+                  <span>Gift Uwem Jackson</span>
                 </div>
               </div>
               <CopyInput text="8137411338" />
